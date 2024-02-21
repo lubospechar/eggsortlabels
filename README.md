@@ -22,7 +22,7 @@ pip install reportlab
 Pro generování PDF sady štítků s využitím třídy `EggSortLabels`, postupujte podle následujícího příkladu:
 
 ```python
-from EggSortLabels import EggSortLabels
+from eggsortlabels import EggSortLabels
 
 # Vytvoření instance třídy s požadovanou konfigurací
 labels = EggSortLabels(
