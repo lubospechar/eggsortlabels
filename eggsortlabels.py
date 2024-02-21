@@ -122,15 +122,13 @@ class EggSortLabels:
             self.c.rect(x, y, self.label_size[0], self.label_size[1], stroke=1, fill=0)
 
             # Tisk horního čísla, pokud se liší od posledního vytisknutého
-            if str(label_data[0]) != last_top_number:
+            if label_data[0] != last_top_number:
                 self.c.setFillColor(toColor(top_color))
                 self.c.setFont("Helvetica-Bold", self.font_size)
                 self.c.drawString(
                     x + 5, y + self.label_size[1] - 25, str(label_data[0])
                 )
-                last_top_number = str(
-                    label_data[0]
-                )  # Aktualizace poslední horní hodnoty
+                last_top_number = label_data[0]  # Aktualizace poslední horní hodnoty
 
             # Tisk dolního čísla
             if len(label_data) > 1:

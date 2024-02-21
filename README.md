@@ -44,10 +44,10 @@ labels = EggSortLabels(
 
 # Data pro generování štítků
 data = [
-    (1, "5"),
-    (1, "18"),
-    (2, "22"),
-    (2, "28")
+    (1, 5),
+    (1, 18),
+    (2, 22),
+    (2, 28)
     # další data...
 ]
 
