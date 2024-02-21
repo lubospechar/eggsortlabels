@@ -24,7 +24,7 @@ class EggSortLabels:
         landscape=False,  # Nastavení orientace stránky
         font_size=26,  # Velikost písma textu na štítku
         horizontal_spacing=0,  # Mezera mezi štítky ve vodorovném směru
-        vertical_spacing=1,  # Mezera mezi štítky ve svislém směru
+        vertical_spacing=0,  # Mezera mezi štítky ve svislém směru
         save_to_memory=False,  # Uložení výsledku do paměti
         labels_per_odd_row=8,  # Počet štítků na lichém řádku
         labels_per_even_row=7,  # Počet štítků na sudém řádku
@@ -138,6 +138,7 @@ class EggSortLabels:
                 text_width = self.c.stringWidth(
                     str(label_data[1]), "Helvetica-Bold", self.font_size
                 )
+                self.c.setFont("Helvetica-Bold", self.font_size)
                 self.c.drawString(
                     x + self.label_size[0] - text_width - 5, y + 5, str(label_data[1])
                 )
