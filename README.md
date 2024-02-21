@@ -56,6 +56,8 @@ labels.generate_labels_from_data(data, top_color="#FF0000", bottom_color="#00000
 
 # Uložení výsledného PDF
 labels.save()
+```
+
 
 Tento příklad demonstruje základní použití třídy pro vytvoření a uložení sady štítků do PDF souboru. Můžete upravit konfiguraci třídy podle svých potřeb, včetně rozměrů štítků, okrajů, orientace stránky a mezery mezi štítky. Flexibilita třídy umožňuje jednoduše přizpůsobit výstup různým požadavkům a využití scénářům.
 
